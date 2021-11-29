@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  background: linear-gradient(90deg, rgba(130,3,10,1) 43%, rgba(255,255,255,1) 43%);
+
+  &--shadow {
+    box-shadow: 0px 8px 15px -5px #000000;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  align-items: center;
+
+  background-image: url("../img/svg/bg-left-flag.svg");
+  background-position:  top left;
+  background-repeat: no-repeat;
+}
