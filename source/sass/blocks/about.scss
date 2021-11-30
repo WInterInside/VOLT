@@ -39,6 +39,7 @@
   border-radius: 50%;
 
   background-image: url("../img/svg/call.svg");
+
   background-position:  center;
   background-repeat: no-repeat;
 
@@ -54,6 +55,7 @@
     margin: 0;
     margin-right: 20px;
     margin-left: 10px;
+    background-size: 70% 70%;
   }
 }
 
@@ -91,6 +93,10 @@
     margin-bottom: 20px;
     width: 100%;
   }
+}
+
+.about__item .about__icon  {
+  transition: 0.5s;
 }
 
 .about__item:hover .about__icon  {
