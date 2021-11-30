@@ -22,4 +22,11 @@
   background-image: url("../img/svg/bg-left-flag.svg");
   background-position:  top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 20px 0;
+    background-size: cover;
+    background-position: top left -550px;
+  }
 }
