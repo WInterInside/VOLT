@@ -1,0 +1,32 @@
+.client {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--afksystem {background-image: url("../img/clients/afksystem.jpg");}
+  &--fmba-rf {background-image: url("../img/clients/fmba.jpg");}
+  &--jkh {background-image: url("../img/clients/jkh.jpg");}
+  &--fkr {background-image: url("../img/clients/fkr.jpg");}
+  &--x5group {background-image: url("../img/clients/x5group.jpg");}
+  &--md {background-image: url("../img/clients/macdonalds.jpg");}
+  &--okey {background-image: url("../img/clients/okey.jpg");}
+  &--miratorg {background-image: url("../img/clients/miratorg.jpg");}
+  &--verniy {background-image: url("../img/clients/verniy.jpg");}
+  &--da {background-image: url("../img/clients/da.jpg");}
+}
+
+.client a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+}

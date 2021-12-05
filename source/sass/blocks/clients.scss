@@ -1,0 +1,22 @@
+.clients {
+  margin-bottom: 70px;
+
+  @media (max-width: 1110px) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: 750px) {
+    margin-bottom: 30px;
+  }
+}
+
+.clients__list {
+  @include list-style;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+
+  justify-content: center;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px;
+}

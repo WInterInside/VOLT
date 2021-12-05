@@ -68,8 +68,23 @@
     text-transform: uppercase;
   }
 
-  &--right {
+  &--prod {
     margin-right: 265px;
+  }
+
+  &--services {
+    margin-left: 365px;
+  }
+
+  &--work {
+    margin-right: 148px;
+  }
+
+  &--clients {
+    margin-left: 205px;
+  }
+
+  &--right {
     @media (max-width: 600px) {
       margin: 0 auto;
     };
@@ -79,14 +94,6 @@
     @media (max-width: 600px) {
       margin: 0 auto;
     };
-  }
-
-  &--services {
-    margin-left: 365px;
-  }
-
-  &--work {
-    margin-right: 148px;
   }
 }
 
