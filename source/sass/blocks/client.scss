@@ -7,9 +7,15 @@
   align-items: center;
   align-content: center;
 
-
   background-position: center;
   background-repeat: no-repeat;
+  background-size: unset;
+
+  @media (max-width: 500px) {
+    width: 140px;
+    height: 80px;
+    background-size: contain;
+  }
 
   &--afksystem {background-image: url("../img/clients/afksystem.jpg");}
   &--fmba-rf {background-image: url("../img/clients/fmba.jpg");}
