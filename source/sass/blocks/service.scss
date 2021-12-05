@@ -1,0 +1,83 @@
+.service {
+  width: 205px;
+  padding: 0 5px;
+  padding-top: 170px;
+  padding-bottom: 40px;
+  border: 1px solid #D2051E;
+  border-radius: 16px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  @media (max-width: 1230px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 979px) {
+    padding-bottom: 20px;
+    padding-top: 140px;
+    background-position: top 20px center;
+  }
+
+  background-repeat: no-repeat;
+  background-position: top 40px center;
+
+  &--prod {
+    background-image: url("../img/svg/service-prod-bg.svg");
+    @media (max-width: 1230px) {
+      width: 100%;
+      margin-right: 0;
+      padding-bottom: 20px;
+
+      padding-top: 140px;
+      background-position: top 20px center;
+    }
+  }
+
+  &--support {    background-image: url("../img/svg/service-support-bg.svg");}
+  &--specialist {    background-image: url("../img/svg/service-spec-bg.svg");}
+
+  &--works {
+    background-image: url("../img/svg/service-works-bg.svg");
+    @media (max-width: 979px) {
+      margin-right: 0;
+    }
+  }
+
+  &--repear {
+    background-image: url("../img/svg/service-repear-bg.svg");
+
+    @media (max-width: 979px) {
+      width: 100%;
+      margin-right: 0;
+      padding-bottom: 20px;
+      padding-top: 140px;
+      background-position: top 20px center;
+    }
+  }
+
+  @media (max-width: 734px) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.service__caption {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  color: #D2051E;
+
+  @media (max-width: 734px) {
+    font-size: 16px;
+  }
+}

@@ -31,7 +31,6 @@
   margin: 0 auto;
   height: 100px;
   background-color: #ffffff;
-  background-position: right;
   background-repeat: no-repeat;
 
   @media (max-width: 1000px) {
@@ -43,11 +42,14 @@
   }
 
   &--left {
+    justify-content: left;
+    background-position: left;
     background-image: url("../img/svg/heading-flag-left.svg");
   }
 
   &--right {
     justify-content: right;
+    background-position: right;
     background-image: url("../img/svg/heading-flag.svg");
   }
 }
@@ -74,9 +76,20 @@
   }
 
   &--left {
-    margin-left: 265px;
     @media (max-width: 600px) {
       margin: 0 auto;
     };
   }
+
+  &--services {
+    margin-left: 365px;
+  }
+
+  &--work {
+    margin-right: 148px;
+  }
+}
+
+.heading__text span {
+  color: #82030A;
 }
