@@ -2,6 +2,8 @@
   width: 200px;
   height: 120px;
   border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #3B3B3B;
 
   justify-items: center;
   align-items: center;
@@ -11,28 +13,35 @@
   background-repeat: no-repeat;
   background-size: unset;
 
+  transition: 0.5s;
+  cursor: pointer;
+
   @media (max-width: 500px) {
-    width: 140px;
-    height: 80px;
-    background-size: contain;
+    width: 150px;
+    height: 90px;
+    background-size: 90% 90%;
   }
 
-  &--afksystem {background-image: url("../img/clients/afksystem.jpg");}
-  &--fmba-rf {background-image: url("../img/clients/fmba.jpg");}
-  &--jkh {background-image: url("../img/clients/jkh.jpg");}
-  &--fkr {background-image: url("../img/clients/fkr.jpg");}
-  &--x5group {background-image: url("../img/clients/x5group.jpg");}
-  &--md {background-image: url("../img/clients/macdonalds.jpg");}
-  &--okey {background-image: url("../img/clients/okey.jpg");}
-  &--miratorg {background-image: url("../img/clients/miratorg.jpg");}
-  &--verniy {background-image: url("../img/clients/verniy.jpg");}
-  &--da {background-image: url("../img/clients/da.jpg");}
-}
+  @media (max-width: 354px) {
+    width: 100%;
+    height: 80px;
+    background-size: 65% 65%;
+  }
 
-.client a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border-radius: 10px;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  &--afksystem {background-image: url("../img/clients/afksystem.svg");}
+  &--fmba-rf {background-image: url("../img/clients/fmba.svg");}
+  &--jkh {background-image: url("../img/clients/jkh.svg");}
+  &--fkr {background-image: url("../img/clients/fkr.svg");}
+  &--x5group {background-image: url("../img/clients/x5group.svg");}
+  &--md {background-image: url("../img/clients/macdonalds.svg");}
+  &--okey {background-image: url("../img/clients/okay.svg");}
+  &--miratorg {background-image: url("../img/clients/miratorg.svg");}
+  &--verniy {background-image: url("../img/clients/verniy.svg");}
+  &--da {background-image: url("../img/clients/da.svg");}
 }

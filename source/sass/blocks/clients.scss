@@ -21,8 +21,14 @@
   grid-row-gap: 40px;
 
   @media (max-width: 500px) {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 140px));
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  @media (max-width: 354px) {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
   }
 }
