@@ -1,2 +1,86 @@
 .footer {
+  position: relative;
+  padding: 100px 0;
+  background-color: #3B3B3B;
+
+  @media (max-width: 1400px) {
+    padding: 30px 0;
+  }
+}
+
+.footer__messengers {
+  display: flex;
+}
+
+.footer__numbers {
+  display: flex;
+  align-items: center;
+  @media (max-width: 559px) {
+    align-self: center;
+  }
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
+
+}
+
+.footer__link {
+  display: block;
+  transition: 0.5s;
+
+  &--phone {
+    font-size: 24px;
+    line-height: 29px;
+    color: #5D0303;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #5D0303;
+      border-top: 1px solid #5D0303;
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &--messenger {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--footer {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &--tm {
+    background-image: url("../img/svg/tm.svg");
+
+    &:hover {
+      box-shadow: 0px 0px 25px 0px rgba(65,190,221,0.8);
+    }
+  }
+
+  &--viber {
+    background-image: url("../img/svg/viber.svg");
+
+    &:hover {
+      box-shadow: 0px 0px 25px 0px rgba(115,108,215,0.8);
+    }
+  }
+
+  &--whatsapp {
+    background-image: url("../img/svg/wapp.svg");
+    &:hover {
+      box-shadow: 0px 0px 25px 0px rgba(162,207,53,0.8);
+    }
+  }
 }

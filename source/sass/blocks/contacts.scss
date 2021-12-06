@@ -11,6 +11,40 @@
     margin-left: 0;
     margin-top: 20px;
   }
+
+  &--footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    @media (max-width: 1100px) {
+      justify-content: center;
+    }
+    @media (max-width: 559px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media (max-width: 350px) {
+      align-items: center;
+    }
+  }
+}
+
+.contacts__group {
+  display: flex;
+  flex-direction: column;
+
+  &--tel {
+    @media (max-width: 350px) {
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .contacts__messengers {
@@ -69,6 +103,21 @@
     }
   }
 
+  &--footer {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    &:hover {
+      transition: 0.5s;
+      color: #D70202;
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid transparent;
+    }
+  }
+
   &--tm {
     background-image: url("../img/svg/tm.svg");
 
@@ -90,5 +139,79 @@
     &:hover {
       box-shadow: 0px 0px 25px 0px rgba(162,207,53,0.8);
     }
+  }
+}
+
+.contacts__location,
+.contacts__mail {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__link--location {
+  height: 100%;
+  width: 100%;
+}
+
+.contacts__location {
+  @media (max-width: 1100px) {
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  @media (max-width: 350px) {
+    text-align: center;
+  }
+}
+
+.contacts__mail {
+  @media (max-width: 1100px) {
+    order: -1;
+    margin-right: 30px;
+  }
+
+  @media (max-width: 559px) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+.contacts__icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media (max-width: 350px) {
+    display: none;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    border: 2px solid #D70202;
+  }
+
+  &--map {  background-image: url("../img/svg/map-marker.svg");}
+  &--mail {  background-image: url("../img/svg/mail-icon.svg");}
+}
+
+.contacts address {
+  font-style: normal;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    color: #D70202;
   }
 }
