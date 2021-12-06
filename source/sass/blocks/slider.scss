@@ -1,8 +1,12 @@
 /* Слайдер */
 .slick-slider {
   padding: 0 80px;
-  height: 120px;
+  // height: 120px;
   position: relative;
+
+  @media (max-width: 815px) {
+    padding: 0;
+  }
 }
 
 .slick-list {
@@ -21,6 +25,15 @@
   border: 1px solid #0a2736;
   border-radius: 50%;
   font-size: 0;
+
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.5s;
+    // box-shadow: inset 0px 0px 5px 0px #82030A
+    box-shadow: 0px 0px 5px 0px #000000;
+  }
 }
 
 .slider .slick-arrow::before {
@@ -29,7 +42,7 @@
   position: absolute;
 
   top: 50%;
-  left: 18px;
+  left: 19px;
   margin-top: -8px;
   border: solid #0a2736;
   border-width: 0 2px 2px 0;
@@ -62,14 +75,18 @@
 /* Слайд */
 .slick-slide {
   display: flex;
-  height: 300px;
+  // height: 300px;
   justify-content: center;
+
+  @media (max-width: 650px) {
+    width: 45%;
+  }
 }
 
 /* Точки (булиты) */
 .slick-dots {
   position: relative;
-  margin-top: -30px;
+
   display: flex;
   justify-content: center;
   align-self: center;
@@ -80,21 +97,26 @@
 .slick-dots li{
   list-style: none;
   margin: 0 11px;
+
+  @media (max-width: 400px) {
+    margin: 0 5px;
+  }
 }
 
 /* Активная точка */
 .slick-dots li.slick-active button{
-  background: linear-gradient(180deg,#bdf040 0,#8bb32a 100%);
+  background: linear-gradient(0deg, rgba(223,73,73,1) 19%, rgba(130,3,10,1) 91%);
 }
 
 /* Элемент точки */
 .slick-dots li button {
+  flex-shrink: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   border: none;
   font-size: 0;
-  border: 1px solid gray;
+  border: 1px solid #000000;
   background-color: transparent;
   cursor: pointer;
 }
@@ -108,6 +130,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 95% 95%;
+
+  @media (max-width: 650px) {
+    width: 250px;
+  }
+
+  @media (max-width: 549px) {
+    width: 100%;
+  }
 
   &--abb {background-image: url("../img/partners/abb.svg");}
   &--dekraft {background-image: url("../img/partners/dekraft.svg");}

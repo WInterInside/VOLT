@@ -1,0 +1,11 @@
+.partners {
+  margin-bottom: 70px;
+
+  @media (max-width: 1110px) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: 750px) {
+    margin-bottom: 30px;
+  }
+}
