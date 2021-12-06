@@ -33,6 +33,11 @@
     border-left: 1px solid #ffffff;
     border-radius: 7px;
   }
+
+  &:hover {
+    transition: 0.5s;
+    color: #ffa8a8;
+  }
 }
 
 @keyframes bounce {
