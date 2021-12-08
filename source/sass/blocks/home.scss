@@ -1,25 +1,25 @@
 .home--link {
   position: absolute;
   z-index: 111;
-  bottom: 15px;
-  right: 15px;
+  bottom: 10px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 
   transition: 0.5s;
-  background: linear-gradient(180deg, #F9878D 0%, #9F0101 100%);
+  background-color: #D70202;
   border: 1px solid #82030A;
 
-  // &:hover {
-  //   transition: 0.5s;
-  //   transform: translateY(-10px);
-  //   box-shadow: 0px 30px 38px -17px #000000;
-  // }
+  &:hover {
+    transition: 0.5s;
+    transform: translateY(-10px);
+    box-shadow: 0px 30px 38px -17px #000000;
+  }
 
   &::before {
     content: "";
@@ -27,8 +27,8 @@
     position: absolute;
 
     top: 55%;
-    left: 12px;
-    margin-top: -8px;
+    left: 10px;
+    margin-top: -7px;
     border: solid #ffffff;
     border-width: 0 4px 4px 0;
     display: inline-block;

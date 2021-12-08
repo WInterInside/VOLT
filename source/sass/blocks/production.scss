@@ -42,21 +42,12 @@
     width: 100%;
 
     background-image: url("../img/prod-bg.svg");
-    background-size: 70% 70%;
-    background-position: top 50px right -180px;
+    background-position: top right -180px;
     background-repeat: no-repeat;
   }
 
   @media (max-width: 900px) {
-    padding-left: 15px;
-    background-size: 50% 50%;
-    background-position: top 150px right -100px;
-    background-repeat: no-repeat;
-    box-shadow: none;
-  }
-
-  @media (max-width: 750px) {
-    background-image: none;
+    background: none;
   }
 }
 

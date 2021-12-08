@@ -51,5 +51,16 @@
     "imask": "^6.0.7",
     "jquery": "^3.6.0",
     "jquery-input-mask-phone-number": "^1.0.15"
-  }
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WInterInside/VOLT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WInterInside/VOLT/issues"
+  },
+  "homepage": "https://github.com/WInterInside/VOLT#readme"
 }
