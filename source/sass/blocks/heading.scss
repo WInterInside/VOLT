@@ -42,13 +42,15 @@
   }
 
   &--left {
+    margin-left: -2px;
     justify-content: left;
     background-position: left;
     background-image: url("../img/svg/heading-flag-left.svg");
   }
 
   &--right {
-    justify-content: right;
+    margin-right: -2px;
+    flex-direction: row-reverse;
     background-position: right;
     background-image: url("../img/svg/heading-flag.svg");
   }
