@@ -5,5 +5,10 @@
 
   // height: 100vh;
   min-height: 960px;
+
+  &--thx {
+    min-height: unset;
+    height: calc(100vh - 180px);
+  }
 }
 
