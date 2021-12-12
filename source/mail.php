@@ -11,12 +11,12 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'volt_request@mail.ru'; //  Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'jXNyyDcfg2QKEHmVhe7W'; // Ваш пароль от почты с которой будут отправляться письма '413711Ec2~'
+$mail->Password = 'jXNyyDcfg2QKEHmVhe7W'; // Ваш пароль от почты с которой будут отправляться письма   пароль от ящика -'413711Ec2~'
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('volt_request@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('de_animator@mail.ru');     // Кому будет уходить письмо
+$mail->addAddress('info@vo-lt.ru');     // Кому будет уходить письмо
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
